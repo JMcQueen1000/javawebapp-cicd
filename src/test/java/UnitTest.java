@@ -4,23 +4,23 @@ import static org.junit.Assert.assertEquals;
 
 public class UnitTest {
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
     @Test
-    void UnitTest1() {
+    public void UnitTest1() {
         int i = 1;
         assertEquals(1, i);
     }
 
     @Test
-    void UnitTest2() {
+    public void UnitTest2() {
         int i = 2;
         assertEquals(2, i);
     }
 
     @Test
-    void UnitTest3() {
+    public void UnitTest3() {
         int i = 3;
         assertEquals(3, i);
     }
