@@ -19,8 +19,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'sefesfefesfsfPipeline_group'
-      def webAppName = 'sefesfefesfsfPipeline'
+      def resourceGroup = 'cicd-pipelin_group'
+      def webAppName = 'cicd-pipeline'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
