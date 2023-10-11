@@ -10,16 +10,16 @@ def getFtpPublishProfile(def publishProfilesJson) {
 node {
   withEnv(['AZURE_SUBSCRIPTION_ID=e89d2989-7326-48bd-b744-4272cb419267',
         'AZURE_TENANT_ID=3cb6411b-56a2-4a05-bed5-3af61d16a79f']) {
-    stage('initialise') {
+    stage('initialise pipeline') {
       checkout scm
     }
 
-    stage('test and compile') {
-      sh 'mvn clean compile'
+    stage('test application') {
+      sh 'mvn clean test'
     }
   
     stage('build deployment package') {
-      sh 'mvn package'
+      sh 'mvn package -DskipTests=true'
     }
   
     stage('deploy to azure') {
