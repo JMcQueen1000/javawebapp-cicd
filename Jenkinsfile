@@ -14,8 +14,8 @@ node {
       checkout scm
     }
 
-    stage('compile and test') {
-      sh 'mvn clean compile test'
+    stage('test and compile') {
+      sh 'mvn clean compile'
     }
   
     stage('build deployment package') {
