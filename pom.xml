@@ -69,15 +69,21 @@
       <version>2.22.2</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.maven.surefire</groupId>
+      <artifactId>surefire-junit47</artifactId>
+      <version>3.0.0-M3</version>
+    </dependency>
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>5.3.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.glassfish.jersey.media</groupId>
-      <artifactId>jersey-media-json-jackson</artifactId>
-      <version>2.22.2</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.3.2</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
